@@ -11,7 +11,5 @@ Currently, we are using the following :
 
 Steps to install
 1. Clone the repository
-2. In your terminal enter the command  - 
-### npm install
-3. After that enter the command - 
-### npm run dev
+2. In your terminal enter the command  - *npm install*
+3. After that enter the command - *npm run dev*
