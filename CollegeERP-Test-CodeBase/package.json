@@ -17,13 +17,8 @@
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-navigation-menu": "^1.2.0",
     "@radix-ui/react-slot": "^1.1.0",
-<<<<<<< HEAD
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
-=======
-    "@radix-ui/react-tabs": "^1.1.0",
-    "@radix-ui/react-tooltip": "^1.1.2",
->>>>>>> 314e2519912516d583b3e38e795478e65a72c988
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.407.0",

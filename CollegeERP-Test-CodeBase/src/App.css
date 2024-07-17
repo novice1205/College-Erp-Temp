@@ -5,6 +5,7 @@ body{
     margin:0;
     font-family: "Poppins";
     overflow-x: hidden;
+    background-color: var(--primary);
 }
 /* margin-left{
     margin-left: 1000px;
