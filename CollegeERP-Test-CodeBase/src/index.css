@@ -4,7 +4,20 @@
 
   @layer base {
     :root {
-      --background: 0 0% 100%;
+      /* Custome Variables */
+      --primary: #0869D9;
+      --secondary: #B0D4FC;
+      --white: #FAFAFA;
+      --black-100: rgb(20, 20, 20, 100%);
+      --black-75: rgb(20, 20, 20, 75%);
+      --black-50: rgb(20, 20, 20, 50%);
+      --black-25: rgb(20, 20, 20, 25%);
+      --black-10: rgb(20, 20, 20, 10%);
+      --black-5: rgb(20, 20, 20, 5%);
+
+
+      /* 👇 This Code not needed */
+      /* --background: 0 0% 100%;
       --foreground: 222.2 84% 4.9%;
       --card: 0 0% 100%;
       --card-foreground: 222.2 84% 4.9%;
@@ -28,11 +41,11 @@
       --chart-2: 173 58% 39%;
       --chart-3: 197 37% 24%;
       --chart-4: 43 74% 66%;
-      --chart-5: 27 87% 67%;
+      --chart-5: 27 87% 67%; */
     }
 
     .dark {
-      --background: 222.2 84% 4.9%;
+      /* --background: 222.2 84% 4.9%;
       --foreground: 210 40% 98%;
       --card: 222.2 84% 4.9%;
       --card-foreground: 210 40% 98%;
@@ -55,15 +68,16 @@
       --chart-2: 160 60% 45%;
       --chart-3: 30 80% 55%;
       --chart-4: 280 65% 60%;
-      --chart-5: 340 75% 55%;
+      --chart-5: 340 75% 55%; */
     }
   }
 
   @layer base {
     * {
-      @apply border-border;
+      /* @apply border-border; */
+      @apply bg-blueMain
     }
     body {
-      @apply bg-background text-foreground;
+      @apply bg-blueMain;
     }
   }

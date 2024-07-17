@@ -105,7 +105,7 @@ export default function SignInSide() {
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
-              >
+              ><Link to="/Home">Sign In</Link>
               </Button>
               <Grid container>
                 <Grid item xs>
