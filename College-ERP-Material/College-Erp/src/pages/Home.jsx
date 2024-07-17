@@ -1,12 +1,11 @@
+import React from 'react';
 import Dashboard from "../components/Dashboard"
-function App() {
+function Home() {
   return (
     <>
       <Dashboard>
       </Dashboard>
-
     </>
   )
 }
-
-export default App
+export default Home
