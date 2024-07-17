@@ -100,12 +100,11 @@ export default function SignInSide() {
                 label="Remember me"
               />
               <Button
-                to=""
                 type="submit"
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
-              > Sign in 
+              > <Link>Sign in</Link> 
               </Button>
               <Grid container>
                 <Grid item xs>
