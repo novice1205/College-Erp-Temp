@@ -5,7 +5,7 @@ import { Component } from '../components/ui/piechart'
 import { Avatar, AvatarImage } from '../components/ui/avatar'
 import { AlertDialogDemo } from '../components/ui/dialogdemo'
 import { TableDemo } from '../components/ui/tablemain'
-// import { Dashboard } from '../components/ui/dashboard'
+import { Dashboard } from '../components/ui/dashboard'
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
         <AlertDialogDemo></AlertDialogDemo>
         </div>
       </div>
-      {/* <Dashboard></Dashboard> */}
+      <Dashboard></Dashboard>
     </>
   )
 }
