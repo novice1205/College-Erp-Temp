@@ -26,7 +26,8 @@ import { mainListItems, secondaryListItems } from '../components/listItems';
 import {Link} from 'react-router-dom';
 // import Chart from './Chart';
 // import Deposits from './Deposits';
-// import Orders from './Orders';
+// import Orders from '../components/Orders';
+import DataTable from '../components/Table'
 
 function Copyright(props) {
   return (
@@ -168,7 +169,10 @@ export default function ClientList() {
             alignItems: 'center',
           }}
         >
+            <div style={{display:'block'}}>
             <h1>Client List</h1>
+            <DataTable />            
+            </div>
       </Box>
     </Box>
     </ThemeProvider>

@@ -13,46 +13,46 @@ import {Link} from 'react-router-dom';
 
 export const mainListItems = (
   <React.Fragment>
+    <Link to='/Dashboard' style={{textDecoration:'none',color:'inherit'}}>
     <ListItemButton>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <Link to='/Dashboard' style={{textDecoration:'none',color:'inherit'}}>
       <ListItemText primary="Dashboard" sx={{ fontFamily: 'Poppins' }} disableTypography/>
-      </Link>
     </ListItemButton>
+    </Link>
+    <Link to='/ClientList' style={{textDecoration:'none',color:'inherit'}}>
     <ListItemButton>
       <ListItemIcon>
         <SchoolIcon />
       </ListItemIcon>
-      <Link to='/ClientList' style={{textDecoration:'none',color:'inherit'}}>
       <ListItemText primary="Colleges" sx={{ fontFamily: 'Poppins' }} disableTypography/>
-      </Link>
     </ListItemButton>
+    </Link>
+    <Link to='/ModuleList' style={{textDecoration:'none',color:'inherit'}}>
     <ListItemButton>
       <ListItemIcon>
         <ViewModuleIcon />
       </ListItemIcon>
-      <Link to='/ModuleList' style={{textDecoration:'none',color:'inherit'}}>
       <ListItemText primary="Modules" sx={{ fontFamily: 'Poppins' }} disableTypography />
-      </Link>
     </ListItemButton>
+    </Link>
+    <Link to='/Reports' style={{textDecoration:'none',color:'inherit'}}>
     <ListItemButton>
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
-      <Link to='/' style={{textDecoration:'none',color:'inherit'}}>
       <ListItemText primary="Reports" sx={{ fontFamily: 'Poppins' }} disableTypography/>
-      </Link>
     </ListItemButton>
+    </Link>
+    <Link to='/Uploads' style={{textDecoration:'none',color:'inherit'}}>
     <ListItemButton>
       <ListItemIcon>
         <CloudUploadIcon/>
       </ListItemIcon>
-      <Link to='/' style={{textDecoration:'none',color:'inherit'}}>
       <ListItemText primary="Uploads" sx={{ fontFamily: 'Poppins' }} disableTypography/>
-      </Link>
     </ListItemButton>
+    </Link>
   </React.Fragment>
 );
 

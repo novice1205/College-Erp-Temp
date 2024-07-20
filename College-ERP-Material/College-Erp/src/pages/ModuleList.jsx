@@ -167,16 +167,17 @@ export default function ModuleList() {
             height: '100vh',
             alignItems: 'center',
           }}
-        >
-            <h1>Module List</h1><br />
-            <Button variant="contained" size="large" sx={{fontFamily:"Poppins", fontWeight:400,width:'50%', backgroundColor:"#B0D4FC", color:"#141414", textTransform:'capitalize',
+        ><div style={{display:'block', width:'100%'}}>
+            <h1>Module List</h1>
+            <Button variant="contained" size="large" sx={{fontFamily:"Poppins", fontWeight:400,width:'25%', backgroundColor:"#B0D4FC", color:"#141414", textTransform:'capitalize',
             '&:hover':{
                 backgroundColor:"#B0D4FD",
                 transition:'300ms',
             }
         }}>
-          Module Control <ArrowForwardIosIcon fontSize='small'/>
+          Module Control
         </Button>
+        </div>
       </Box>
     </Box>
     </ThemeProvider>
