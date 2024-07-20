@@ -10,18 +10,20 @@ import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import BasicDateCalendar from './Calendar';
-import ButtonSizes from "./Button"
+// import BasicDateCalendar from './Calendar';
+// import ButtonSizes from "./Button"
+// import Snackbar from '@mui/material/Snackbar';
 // import Badge from '@mui/material/Badge';
 // import Container from '@mui/material/Container';
 // import Grid from '@mui/material/Grid';
 // import Paper from '@mui/material/Paper';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ImageAvatars from './Avatar';
+import ImageAvatars from '../components/Avatar';
 // import NotificationsIcon from '@mui/icons-material/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
+import { mainListItems, secondaryListItems } from '../components/listItems';
+import {Link} from 'react-router-dom';
 // import Chart from './Chart';
 // import Deposits from './Deposits';
 // import Orders from './Orders';
@@ -88,7 +90,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-export default function Dashboard() {
+export default function ClientList() {
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
     setOpen(!open);
@@ -101,7 +103,7 @@ export default function Dashboard() {
         <AppBar position="absolute" open={open}>
           <Toolbar
             sx={{
-              pr: '24px', backgroundColor:'#0869D9', // keep right padding when drawer closed
+              pr: '24px', backgroundColor:'#0869D9',// keep right padding when drawer closed
             }}
           >
             <IconButton
@@ -125,17 +127,14 @@ export default function Dashboard() {
             >
               College ERP
             </Typography>
-            <Box sx={{ display: 'flex', alignItems:'center', backgroundColor:'#B0D4FD',color:'#141414', padding:'2px 25px 2px 25px', 
+            <Link to="/" style={{textDecoration:'none'}}> 
+            <Box sx={{ display: 'flex', alignItems:'center', backgroundColor:'#0869D9',color:'whitesmoke', padding:'2px 25px 2px 25px', 
               borderRadius:'10px', cursor:'pointer',
-              '&:hover':{
-                backgroundColor:'#89BEFB',
-                transition:'200ms',
-              }
               }}>
-              <Typography sx={{marginRight:'10px', fontFamily:'Poppins'}}>Raghav Sethi</Typography>
+              <Typography sx={{marginRight:'10px', fontFamily:'Poppins',}}>Raghav Sethi</Typography>
             <ImageAvatars />
             </Box>
-            
+            </Link>
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open}>
@@ -168,8 +167,8 @@ export default function Dashboard() {
             height: '100vh',
             alignItems: 'center',
           }}
-        ><ButtonSizes></ButtonSizes>
-        <BasicDateCalendar/>
+        >
+            <h1>Client List</h1>
       </Box>
     </Box>
     </ThemeProvider>

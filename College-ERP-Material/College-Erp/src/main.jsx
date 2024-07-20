@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SignIn from './pages/Signin.jsx';
-import Home from './pages/Home.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import ClientList from './pages/ClientList.jsx';
+import ModuleList from './pages/ModuleList.jsx';
 // import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -10,7 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<SignIn />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/ClientList" element={<ClientList />} />
+        <Route path="/ModuleList" element={<ModuleList />} />
       </Routes>
     </Router>
   </React.StrictMode>
