@@ -120,7 +120,7 @@ export default function SignIn() {
               />
               <Button
                 component={Link}
-                to="/Home"
+                to="/Dashboard"
                 type="submit"
                 fullWidth
                 variant="contained"
